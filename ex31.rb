@@ -16,7 +16,11 @@ if door == "1"
   elsif bear == "2"
     puts "The bear eats your legs off.  Good job!"
   else
+    # %s is a format specifier for strings (%s acts as placeholder for
+    # given string value). ruby also has %d for integers, %f for floats
     puts "Well, doing %s is probably better.  Bear runs away." % bear
+    # % bear is a string formatting operation. takes value of variable "bear"
+    # to replace the "%s" in the string.
   end
 
 elsif door == "2"
